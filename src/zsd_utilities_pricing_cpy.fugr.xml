@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Re-platforming</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZSD_UTILITIES_PRICING_CPYTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZSD_UTILITIES_PRICING_CPY</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_SD_PRICE_COND_UPD_CPY</FUNCNAME>
+     <SHORT_TEXT>Create Condition Records</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_KOMG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KOMG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_KONH</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KONH</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_KONP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KONP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_KOMG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Filter segment with separated condition key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_KONH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data from condition header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_KONP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Conditions Items</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
