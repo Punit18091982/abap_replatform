@@ -73,5 +73,8 @@ DATA : p_path TYPE rlgrap-filename.
     WRITE: 'SUCCESS'.
   ENDIF.
 
-  endmethod.
+  DATA LV_DATE TYPE D.
+
+  LV_DATE = SY-datum .
+  ENDMETHOD.
 ENDCLASS.
